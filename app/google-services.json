@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "251855204870",
+    "firebase_url": "https://moody-music-236003.firebaseio.com",
+    "project_id": "moody-music-236003",
+    "storage_bucket": "moody-music-236003.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:251855204870:android:edd561c82d1b4135",
+        "android_client_info": {
+          "package_name": "com.example.moodymusic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "251855204870-132d5jm3thv88pthv5l3tfpbf9mp9m7f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.moodymusic",
+            "certificate_hash": "803dd84c7467340285f335969249fe340e526f96"
+          }
+        },
+        {
+          "client_id": "251855204870-4kgc3qt5qko61r201jij7ee0n6mp1kbd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC57XySxyFqaAyflo2C7zlIxQdkTVwuBvI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "251855204870-4kgc3qt5qko61r201jij7ee0n6mp1kbd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

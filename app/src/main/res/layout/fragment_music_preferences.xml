@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <EditText
+        android:id="@+id/text_music_preferences_fragment"
+        android:layout_width="320dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Please Select Your Music Preferences"
+        android:textAlignment="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+
+    <CheckBox
+        android:id="@+id/rockBox"
+        android:layout_width="215dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="8dp"
+        android:text="Rock"
+        android:layout_below="@+id/header"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true" />
+
+    <CheckBox
+        android:id="@+id/rapBox"
+        android:layout_width="215dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Rap"
+        android:layout_below="@+id/rockBox"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true" />
+
+    <CheckBox
+        android:id="@+id/hnrBox"
+        android:layout_width="215dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Hip Hop/ RnB"
+        android:layout_below="@+id/rapBox"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true" />
+
+    <CheckBox
+        android:id="@+id/popBox"
+        android:layout_width="215dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Pop"
+        android:layout_below="@+id/hnrBox"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true" />
+
+    <CheckBox
+        android:id="@+id/countryBox"
+        android:layout_width="215dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Country"
+        android:layout_below="@+id/popBox"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true" />
+
+    <CheckBox
+        android:id="@+id/classicalBox"
+        android:layout_width="215dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Classical"
+        android:layout_below="@+id/countryBox"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true" />
+</RelativeLayout>

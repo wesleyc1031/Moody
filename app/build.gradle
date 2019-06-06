@@ -1,0 +1,70 @@
+apply plugin: 'com.android.application'
+apply plugin: 'maven'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.example.moodymusic"
+        minSdkVersion 28
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+
+    applicationVariants.all { variant ->
+        variant.getRuntimeConfiguration().exclude group: 'com.google.code.findbugs'
+    }
+}
+
+repositories {
+    mavenCentral()
+    maven { url "https://jitpack.io" }
+    flatDir { dirs 'libs' }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:drawerlayout:28.0.0'
+    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.android.support:support-media-compat:28.0.0'
+    implementation 'com.android.support:animated-vector-drawable:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:2.0.0-alpha5'
+    implementation 'com.squareup.okhttp3:okhttp:4.0.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.13-beta-3'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+
+    //spotify
+    implementation project(':spotify-app-remote')
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.github.kaaes:spotify-web-api-android:0.4.1'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.spotify.sdk:spotify-auth:1.1.0@aar'
+    //firebase
+    implementation 'com.google.firebase:firebase-core:16.0.9'
+    implementation 'com.firebase:firebase-client-android:2.5.2'
+    implementation 'com.google.firebase:firebase-ml-vision:20.0.0'
+    implementation 'com.google.firebase:firebase-ml-vision-image-label-model:17.0.2'
+    implementation 'com.google.firebase:firebase-ml-vision-face-model:17.0.2'
+    implementation 'com.google.firebase:firebase-auth:17.0.0'
+    implementation 'com.google.firebase:firebase-ml-model-interpreter:19.0.0'
+    implementation 'com.google.android.material:material:1.1.0-alpha06'
+    //watson
+    implementation 'com.ibm.watson.developer_cloud:android-sdk:0.5.0'
+    implementation 'com.ibm.watson.developer_cloud:speech-to-text:6.14.2'
+    implementation 'com.ibm.watson:ibm-watson:7.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.0-beta1'
+}
+apply plugin: 'com.google.gms.google-services'

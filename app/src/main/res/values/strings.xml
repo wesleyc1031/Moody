@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Moody Music</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Moody Music</string>
+    <string name="nav_header_subtitle">The Mood Based Music Service</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="take_picture">Take picture</string>
+
+
+    <!--Watson Speech-To-Text Service Credentials-->
+    <string name="STT_username"></string>
+    <string name="STT_password"></string>
+    <string name="STT_URL">https://stream.watsonplatform.net/speech-to-text/api</string>
+
+
+    <string name="api_key">e4cMYVoDJWquCBRPhf0J8ZKnV5RUF96CfoL93nU-wFDa</string>
+    <string name="already_have_an_account">Account Already Exists</string>
+    <string name="login">Login</string>
+    <string name="don_t_have_an_account_with_us">No Account Created</string>
+    <string name="register_here">Register Here</string>
+    <string name="welcome_to_moody">Welcome to Moody</string>
+    <string name="tell_us_how_you_are_feeling" />
+</resources>
