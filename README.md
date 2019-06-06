@@ -1,4 +1,4 @@
-# FinalProject
+# Moody
 
 Android Application to determine a user's mood via facial recognition provided by: Google's Firebase MLKit, specifically Mobile Vision, IBM Watson's Speech to Text, and Spotify for Music Streaming
   
